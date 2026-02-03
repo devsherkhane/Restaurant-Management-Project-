@@ -1,21 +1,28 @@
 <template>
     <div class="nav">
-        <a href="home">Home</a>
-        <a href="home">Add Restaurant</a>
-        <a href="home">Update Restaurant</a>
-        <a href="home">Logout</a>
+        <a href="#">Home</a>
+        <a href="#">Add Restaurant</a>
+        <a href="#">Update Restaurant</a>
+        <a v-on:click="logout">Logout</a>
     </div>
 </template>
 <script>
-export default{
-    name:'Header'
+export default {
+    name: 'Header',
+    methods: {
+        logout() {
+            localStorage.clear();
+            this.$router.push({ name:'Login'})
+        }
+    }
 }
 </script>
 <style>
-.nav{
+.nav {
     background-color: darkblue;
     overflow: hidden;
 }
+
 .nav a {
     float: left;
     color: #fff;
@@ -25,8 +32,9 @@ export default{
     font-size: 16px;
     margin-right: 5px;
 }
-.nav a:hover{
-    background-color: #fff ;
+
+.nav a:hover {
+    background-color: #fff;
     color: black;
 }
 </style>
