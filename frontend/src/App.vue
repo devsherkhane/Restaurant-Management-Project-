@@ -22,7 +22,10 @@ export default {
     color: black;
     background-color: #fff;
 }
-
+body{
+  padding: 0;
+  margin: 0;
+}
 .Register button ,.login input{
     width: 320px;
     color: #fff;
