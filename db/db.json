@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "name": "Bruce Wayne",
+      "email": "bruce@gmail.com",
+      "password": "bruce123",
+      "id": 1
+    },
+    {
+      "name": "Tony Stark",
+      "email": "tony@gmail.com",
+      "password": "tony123",
+      "id": 2
+    },
+    {
+      "name": "Barry Allen",
+      "email": "barry@gmail.com",
+      "password": "barry123",
+      "id": 3
+    },
+    {
+      "name": "Peter Parker",
+      "email": "peter@gmail.com",
+      "password": "peter123",
+      "id": 4
+    }
+  ]
+}
