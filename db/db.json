@@ -27,9 +27,9 @@
   ],
   "restaurants": [
     {
-      "id": 1,
       "name": "KFC",
-      "contact": 111
+      "contact": "111",
+      "id": 1
     },
     {
       "name": "McDonalds",
@@ -45,6 +45,26 @@
       "name": "Burger King",
       "contact": 444,
       "id": 4
+    },
+    {
+      "name": "Pizza Hut",
+      "contact": 555,
+      "id": 5
+    },
+    {
+      "name": "Lapinos Pizza ",
+      "contact": "666",
+      "id": 6
+    },
+    {
+      "name": "Starbucks",
+      "contact": "777",
+      "id": 7
+    },
+    {
+      "name": "Cafe Coffee Day",
+      "contact": "888",
+      "id": 8
     }
   ]
 }
