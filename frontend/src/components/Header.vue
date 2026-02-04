@@ -20,11 +20,14 @@ export default {
 <style>
 .nav {
     background-color: darkblue;
-    overflow: hidden;
+    display: flex;              /* ✅ enable flex */
+    justify-content: center;    /* ✅ center horizontally */
+    align-items: center;        /* ✅ center vertically */
+    gap: 15px;                  /* space between links */
+    height: 50px;
 }
 
 .nav a {
-    float: left;
     color: #fff;
     text-align: center;
     padding: 10px 14px;
