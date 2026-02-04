@@ -23,6 +23,12 @@
       "email": "peter@gmail.com",
       "password": "peter123",
       "id": 4
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 5
     }
   ],
   "restaurants": [

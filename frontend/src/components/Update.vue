@@ -1,6 +1,6 @@
 <template>
     <Header />
-    <h1 class="h1">Hello , Welcome to Update Restaurant page</h1>
+    <h1 class="h1">Update Restaurant page</h1>
      <form class="add">
         <input type="text" placeholder="Enter name" v-model="restaurant.name" name="name">
         <input type="text" placeholder="Enter Contact No" v-model="restaurant.contact" name="contact">

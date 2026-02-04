@@ -42,7 +42,7 @@ export default {
 </script>
 <style>
 .h1 {
-    color: skyblue;
+    color: darkblue;
 }
 
 .logo {

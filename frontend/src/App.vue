@@ -26,7 +26,7 @@ body{
   padding: 0;
   margin: 0;
 }
-.Register button ,.login input ,.add button{
+.Register button ,.login button ,.add button{
     width: 320px;
     color: #fff;
     background-color: darkblue;

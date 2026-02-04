@@ -47,11 +47,16 @@ export default {
 </script>
 <style>
 .Signup {
-    color: skyblue;
+    color: darkblue;
 }
 
 .logo {
     width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    border: 2px solid darkblue;
+    box-shadow: 0 2px 6px darkblue;
 }
 
 .Register input {
@@ -62,7 +67,7 @@ export default {
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid skyblue;
+    border: 1px solid darkblue;
     color: black;
     background-color: #fff;
 }
@@ -70,7 +75,7 @@ export default {
 .Register button {
     width: 320px;
     color: #fff;
-    background-color: skyblue;
+    background-color: darkblue;
     cursor: pointer;
 }
 </style>
