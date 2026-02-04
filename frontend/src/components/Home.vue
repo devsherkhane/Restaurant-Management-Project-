@@ -1,24 +1,56 @@
 <template>
     <Header />
-    <h1 class="h1">Hello , Welcome to Home page</h1>
+    <h1 class="h1">Hello {{ name }} , Welcome to Home page</h1>
+    <h2 class="h2">Restaurant List</h2>
+    <table class="table" border ="1px">
+        <tr>
+            <td>ID</td>
+            <td>Name</td>
+            <td>Contact</td>
+        </tr>
+        <tr v-for="item in restaurants" :key="item.id">
+            <td>{{ item.id }}</td>
+            <td>{{ item.name }}</td>
+            <td>{{ item.contact }}</td>
+        </tr>
+    </table>
 </template>
 <script>
+import axios from 'axios';
 import Header from './Header.vue';
 export default {
     name: 'Home',
-    mounted() {
+    async mounted() {
         let user = localStorage.getItem('user-info')
+        this.name = JSON.parse(user).name
         if (!user) {
             this.$router.push({ name: 'Signup' })
         }
+        let result = await axios.get("http://localhost:3000/restaurants")
+        this.restaurants = result.data
     },
     components: {
         Header
+    },
+    data() {
+        return {
+            name: '',
+            restaurants: []
+        }
     }
 }
 </script>
-<style>
+<style scoped>  
 .h1 {
-    color: skyblue;
+    color:black;
+}
+.h2  {
+    color: black;
+    text-align:left
+}
+.table{
+    width: 500px;
+    height: 40px;
+    color: black;
 }
 </style>

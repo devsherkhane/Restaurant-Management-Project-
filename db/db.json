@@ -24,5 +24,27 @@
       "password": "peter123",
       "id": 4
     }
+  ],
+  "restaurants": [
+    {
+      "id": 1,
+      "name": "KFC",
+      "contact": 111
+    },
+    {
+      "name": "McDonalds",
+      "contact": 222,
+      "id": 2
+    },
+    {
+      "name": "Dominoes",
+      "contact": 333,
+      "id": 3
+    },
+    {
+      "name": "Burger King",
+      "contact": 444,
+      "id": 4
+    }
   ]
 }
