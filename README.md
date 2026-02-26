@@ -18,5 +18,6 @@ User Authentication: Secure Sign Up and Login system using localStorage to persi
 * Protected Routes: Navigation guards that redirect unauthenticated users to the Sign Up/Login pages.
 
 * Responsive Header: A centralized navigation component with logout functionality.
+  
 ---
 
